@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Gutierrez Diego">
+    <meta name="description" content="Think Creatively es un emprendimiento familiar enfocada al diseño de todo tipo de prendas de ropa en tela y cuero.">
+    <meta name="keywords" content="Startup, Think Creatively, Diseño de modas, Telas, Cueros">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/styles_contact.css">
+	<title>Web Page - Think Creatively</title>
+</head>
+
+<body>
+	<div class="nav">
+		<div>Logo</div>
+		<ul>
+			<li><a href="#Inicio"><strong>Inicio</strong></a></li>
+			<li><strong>Productos</strong></li>		
+			<li><strong>Servicios</strong></li>
+			<li><a href="#QuienesSomos"><strong>Quienes somos</strong></a></li>
+			<li><a href="#Contacto"><strong>Contacto</strong></a></li>
+		</ul>
+	</div>
+
+	<!----------------------  Video ----------------------->
+	<video autoplay muted loop id="MiVideo">
+		<source src="media/coverr-girl-in-the-computer-at-home-0684.mp4" type="video/mp4">
+	</video>
+		<!-- Descripcion del video -->
+	<div class="content">
+		<h1>Think Creatively</h1>
+		<p> Somos una Startup familiar orientada al diseño moderno y elegante de prendas de ropa de tela y cuero.</p>
+		<!-- Boton para pause/play el video con JavaScript -->
+		<script src="scripts/scripts.js"></script>
+		<button id="MiBoton" onclick="PausePlay()">Pause</button>
+	</div>
+
+	<div class="container">
+		<a name="Contacto"><h2>Contacto</h2></a>
+		<form action="/mail.php" method="GET">
+			<ul>
+				<legend>Si tenes alguna duda o consultas, ¡NO DUDES EN PREGUNTARNOS!</legend>
+				<li>
+					<label for="nombre">Nombre: </label>
+					<input type="text" name="nombre" id="nombre">
+					<label for="nombre"><abbr title="required" aria-label="required">*</abbr></label>
+				</li>
+				<li>
+					<label for="email">E-mail: </label>
+					<input type="email" name="email" id="email" value="usuario@dominio">
+				</li>
+				<li>
+					<label for="mensaje">Mensaje: </label>
+					<textarea name=mensaje id="mensaje" cols="50" rows="5"></textarea>
+				</li>
+				<li>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6809.845870783905!2d-64.17313063218599!3d-31.416249278104097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1602883455911!5m2!1ses-419!2sar" 
+					width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</li>
+				<li class="center">
+					<button type="submit">Enviar</button>
+				</li> 				
+			</ul>
+		
+		</form>
+	</div>
+</body>
+</html>
